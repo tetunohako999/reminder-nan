@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>リマインダーなん？</title>
+<meta name="description" content="予定の時間を知らせてくれる Windows 用のリマインダーアプリです。キャラクターが出てきます。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">リマインダーなん？</a>
+  <nav><a href="guide.html">使い方</a><a href="terms.html">利用規約</a></nav>
+</header>
+<main>
+<section class="hero">
+<img class="hero-image" src="nanmo-dog.png" alt="星空を見上げる、なんもと犬の後ろ姿" width="1671" height="941">
+<h1>リマインダーなん？</h1>
+<p class="lead">予定の時間を知らせてくれる Windows 用のリマインダーアプリです。<br>キャラクターが出てきます。</p>
+<p><a class="button" href="/download">ダウンロード</a></p>
+<p class="meta">版 1.0.0 ・ Windows 用のインストーラー（約 201 MB）</p>
+<p class="note">ダウンロード・インストールした時点で、<a href="terms.html">利用規約</a>に同意したものとします。</p>
+<p class="note">スマホでは使えません。Windows のパソコンで開いてダウンロードしてください。</p>
+</section>
+
+<section>
+<h2>本物か確かめる（おすすめ）</h2>
+<p>インストーラーの SHA-256（ファイルの指紋）:</p>
+<pre class="hash"><code>7c64dec4fe8fac41def2cc6d65921812d24f3649afbc34b3e7683c212b01f6a3</code></pre>
+<p>PowerShell で次のように実行して、出た値が上と同じか比べてください。違うときは、実行せずに削除してください。</p>
+<pre><code>Get-FileHash &quot;$env:USERPROFILE\Downloads\ReminderNan-Setup-1.0.0.exe&quot;</code></pre>
+<p>配布してくれた人から、別のメッセージで同じ値を受け取っている場合は、そちらとも比べるとより確かです。</p>
+</section>
+
+<section>
+<h2>インストール</h2>
+<ol>
+<li>上の「ダウンロード」のボタンから、インストーラーをダウンロードします。
+</li>
+<li>ダブルクリックして実行します。「Windows によって PC が保護されました」と出たら、「詳細情報」→「実行」を押します。このアプリには有料の電子署名を付けていないため、この画面が出ます。
+</li>
+<li>利用規約が表示されるので、読んで「同意する」を押します。
+</li>
+<li>誰のために入れるかを選ぶ画面では、そのまま（自分だけ）で進めます。この場合、管理者の権限は要りません。
+</li>
+<li>インストールが終わったら「完了」を押すと、アプリが起動します。スタートメニューとデスクトップに「リマインダーなん？」ができます。
+</li>
+</ol>
+</section>
+
+<section>
+<h2>動く環境</h2>
+<ul>
+<li>Windows 11（Windows 10 でも動く見込みです）
+</li>
+<li>インターネットは、会話と天気を使うときだけ使います。
+</li>
+</ul>
+</section>
+
+<section>
+<h2>できること</h2>
+<ul>
+<li>予定を登録すると、その時間に Windows の通知が出ます。キャラクターも吹き出しで知らせます。
+</li>
+<li>毎日・毎週などのくりかえしや、5 分前・10 分前・1 日前のお知らせもできます。
+</li>
+<li>キャラクターがデスクトップを歩き回ります。その場に留まることもできます。トレイに入れられます。
+</li>
+<li>Gemini API キーを設定すると、キャラクターと会話できます。会話で予定を登録したり、天気を聞いたりもできます。キーがなくても、ほかの機能はすべて使えます。
+</li>
+</ul>
+<p><a href="guide.html">使い方と注意を、くわしく見る →</a></p>
+</section>
+
+<section>
+<h2>キャラクターの絵と動きについて</h2>
+<p>キャラクターの絵と動きは、Google の生成 AI（Gemini / Veo）で作った動画をもとに、切り出し・加工して作っています。観測ノートのメイキング動画は、作った動画そのものです。</p>
+</section>
+</main>
+<footer class="site">
+  <p>天気データ: <a href="https://open-meteo.com/" rel="noreferrer">Open-Meteo.com</a>（<a href="https://creativecommons.org/licenses/by/4.0/" rel="noreferrer">CC BY 4.0</a>）</p>
+  <p>使っている部品: Electron・Chromium・koffi など。それぞれのライセンスの表示は、アプリと一緒に配っています。</p>
+  <p>不具合や質問は、このアプリを紹介してくれた人（作者）に直接伝えてください。</p>
+</footer>
+</body>
+</html>
